@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="GIS, Saudi Arabia, Map, City, Landmark, Dhahran, Riyadh, Jeddah">
+        <meta name="author" content="Yousef Taj">
+        <title>GIS Saudi Arabia Map</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+        
+        <!--This is the header of the webpage. It is made up of three parts: Logo, navigation bar and user login options-->
+        <header>  
+            <a href="index.html">
+                <img id="logo" src="/images/logo.png" alt="Logo">
+            </a>
+
+            <!--None of these links work because they were not requested for this assignment-->
+            <nav id="nav-bar">                
+                <a href="maps.html">MAPS</a>
+                <a href="resources.html">RESOURCES</a>
+                <a href="events.html">EVENTS</a>
+                <a href="products.html">PRODUCTS</a>
+            </nav>
+            
+            <div id="user-control">
+                <img id="user-logo" src="/images/user.png" alt="User Logo">
+                <br>
+                <a href="/HTML/sign_in.html">Sign in</a>
+                /
+                <a href="/HTML/sign_up.html">Sign up</a>
+            </div>
+        </header>
+
+        <!--This is the map section. The three cities selected are: Dhahran, Riyadh and Jeddah. They can be found by hovering over their general areas-->
+        <div id="map">
+            <img src="/images/Saudi-Arabia-Map.jpg" usemap="#image-map" alt="Saudi Arabia Map">
+        
+            <map name="image-map">
+                <area alt="Dhahran City" title="Dhahran City - Host of one of the biggest oil producing companies in the world, Saudi Aramco, and the biggest shopping mall in the Eastern Province, Dhahran mall..." href="/HTML/dhahran.html" coords="862,310,830,342,820,401,846,432,926,418,902,387,900,373,907,382,910,373,906,356,899,349,903,343,894,336,881,334,876,325,876,316,882,310,874,307" shape="poly">
+                <area alt="Riyadh City" title="Riyadh City - The capital of Saudi Arabia, the largest city on the Arabian Peninsula and the most populous in Saudi Arabia..." href="/HTML/riyadh.html" coords="668,406,658,453,676,495,716,511,759,500,801,476,755,431,733,397,704,389" shape="poly">
+                <area alt="Jeddah City" title="Jeddah City - The commercial centre of Saudi Arabia, the second largest city in Saudi Arabia and the tenth largest in the Arab world. Host of the Islamic Port, the second largest in the Arab world..." href="/HTML/jeddah.html" coords="305,572,348,585,357,605,368,619,366,648,358,669,335,686,320,665,307,646,305,637,311,636,295,603" shape="poly">
+            </map>
+        </div>
+        <p id="map-text">
+            Saudi Arabia Information: Saudi Arabia is located in the Middle 
+            East. Saudi Arabia is bordered by the Red Sea to the west, 
+            Yemen and Oman to the south, the Persian Guld, Qatar and 
+            United Arab Emirates to the east, and Kuwait, Iraq, and 
+            Jordan to the north
+        </p>
+    
+        <!--This is the footer sections. It follows the guidelines provided. At the very bottom is the validation requested-->
+        <hr>
+
+        <img class="image" src="/images/earth.jpg" alt="Earth">
+
+        <div class="text">
+            <h6 class="title">Saudi Arabia Using Google Earth:</h6> Google Earth is a free 
+            program that allows you to explore stellite images showing the
+            cities and lanscapes of Saudi Arabia and all of Asia in fantastic
+            detail. It works on your desktop computer, tablet, or mobile phone.
+            The images in many areas are detailed enough that you can see houses,
+            vehicles and even people on a city street. Google Earth is free and
+            easy-to-use.
+        </div>
+       
+        <hr>
+
+        <img class="image" src="/images/world-map.jpg" alt="World map">
+
+        <div class="text">
+            <h6 class="title">Saudi Arabia on a World Wall Map:</h6> Saudi Arabia
+            is one of nearly 200 countries illustrated on our Blue Ocean Laminated
+            Map of the World. This map shows a combination of political and physical
+            features
+        </div>
+
+        <hr>
+
+        <img class="image" src="/images/asia.png" alt="Asia">
+
+        <div class="text">
+            <h6 class="title">Saudi Arabia On a Large Wall Map of Asia:</h6> If
+            you are interested in Saudi Arabia in the greography of Asia our large
+            laminated map of Asia might be just what you need. It is a large political
+            map of Asia that also shows many of the continent's physical features in color
+            or shaded relied. Major lakes, rivers, cities, roads, country boundaries,
+            coastlines and surrounding islans are all shown on the map.
+        </div>
+
+        <hr>
+
+        <div id="validation">
+            <img src="/images/index-valid.png" alt="Valiadator Result">
+        </div>
+        
+        <hr>
+
+    </body>
+</html>
