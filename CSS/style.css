@@ -1,142 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 body {
-    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*Header styles are here. This includes navigation bar and all of its elements*/
-header {
-    background-color: lightgray;
+.navbar {
+    background-color: peachpuff;
 }
 
-nav {
-    display: inline-block;
-    overflow: hidden;
+.btn-success {
+    color: #30475E;
+    background-color: #4ECCA3;
 }
 
-#logo {
-    width: 10%;
+.bg-success {
+    color: #30475E;
+    background-color: #4ECCA3;
 }
 
-#nav-bar {
-    width: 75%;
-    text-align: center;
+.btn {
+    border: none;
+    text-transform: uppercase;
+    border-radius: 50px;
 }
 
-#nav-bar a {
-    color: black;
-    margin: auto;
-    padding: 14px 12px;
-    text-decoration: none;
-    font-size: 1.5em;
+.btn-success:hover {
+    background-color: #3BBBAE;
+    border: none;
 }
 
-#user-logo {
-    width: 40px;
-    margin: auto;
+input {
+    border-radius: 5px;
+    border: solid #808080 .5px;
+    text-align: left;
 }
 
-#user-control {
-    text-align: center;
-    width: 10%;
-    display: inline-block;
-    overflow: hidden;
+.text-success {
+    color: #4ECCA3;
 }
 
-#user-control a {
-    color: black;
-    font-size: 1em;
-    text-decoration: none;
+.card {
+    border-radius: 50px;
 }
 
-/*Style of the map in the index page*/
-#map {
-    text-align: center;
-    padding-top: 10px;
+.web-footer {
+    background-color: #e8e8e8;
 }
 
-/*Sign in and sign up pages design. They're both designed similarily*/
-#sign-in {
-    margin: 20px 20px;
-    padding: 10px;
-    border: 2px black solid;
-    text-align: center;
-    line-height: 1.4em;
-}
-
-#sign-in input {
-    margin: 5px;
-}
-
-#sign-up {
-    margin: 20px 20px;
-    padding: 10px;
-    border: 2px black solid;
-    text-align: center;
-    line-height: 1.4em;
-}
-
-#sign-up input {
-    margin: 5px;
-}
- /*Design of the info section for each city. They all follow the same design*/
-.city-info {
-    margin: 20px 20px;
-    padding: 10px;
-    border: 2px black solid;
-    line-height: 1.4em;
-}
-
-/*Design of the header of each section in city info*/
-.city-info h1 {
-    text-indent: 0px;
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-/*Design of the landmark pictures in each city's page*/
-.city-info img {
-    width: 80%;
-    border: black double;
-}
-
-.city-image {
-    padding: 20px;
-    text-align: center;
-}
-
-/*Design of extra links*/
-.city-info a {
-    text-decoration: none;
-}
-
-.city-info a :hover {
-    color: red;
-}
-
-/*Footer images desgin*/
-.image {
-    width: 15%;
-    max-height: 150px;
-}
-
-/*Title is the text at the start of each footer para*/
-.title {
-    color: blue;
-    display: inline-block;
-    font-size: 15px;
-    margin: auto;
-}
-
-/*Footer text design*/
-.text {
-    display: inline-block;
-    vertical-align: top;
-    width: 80%;
-}
-
-#validation {
-    text-align: center;
-}
-
-#validation img {
-    width: 80%;
+.footer-copyright {
+    background-color: #2b2b2b;
+    color: white;
 }
