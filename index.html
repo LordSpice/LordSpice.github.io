@@ -4,17 +4,18 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="Coupon, Yousef, Mowfaq, Khalid, H2O2, Offer, deal, shopping, shop">
-        <meta name="description" content="A tailormade experience for your shopping leasiure where you may find all kinds of coupons and offers that will fulfill your needs">
-        <meta name="author" content="Yousef Taj, Khalid AlAmro, Mowfaq Wale">
+        <meta name="keywords" content="ICS, SWE, KFUPM, department, University, universities, class, student">
+        <meta name="description" content="The homepage of the KFUPM ICS department">
+        <meta name="author" content="Yousef Taj">
         
         <!-- Bootstrap & Personal CSS -->
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/style.css">
 
-        <title>H2O2 Coupon - Main Page</title>
+        <title>ICS - Main Page</title>
     </head>
 
+    <!-- Due to lack of images available for ics department, some general clipart was used instead for page elements -->
     <body>
         <script src="/js/bootstrap.bundle.min.js"></script>
 
@@ -29,29 +30,102 @@
             crossorigin="anonymous"></script>
 
         <!-- Navigation bar for website -->
-        <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
-            
-            <!-- Collapse button for when screen is too small to display elements correctly. Used to hide search bar and activate it with button -->
-            <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#searchBarToggler"
-                aria-controls="searchBarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <img src="/img/magnifying-glass.svg" alt="search" width="30" height="30" loading="lazy">
-            </button>  
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center navbar-custom">
             
             <!-- Logo of website. Doubles as a nav button to index page -->
-            <a class="navbar-brand mx-auto" href="/index.html"><img src="/img/h202logo.svg" alt="H2O2logo" width="50" height="50" alt="" loading="lazy">
-                H2O2 Coupon
-            </a>
+            <a class="navbar-brand mx-auto" href="/index.html"><img src="/img/information-dept-logo-27.svg" alt="logo" width="240" height="" loading="lazy"></a>        
+
+            <div class="navbar-nav mx-auto d-lg-block d-none">
+                <ul class="navbar-nav text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- Link to second page of assignment -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/student.html">People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Academics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Prospective Students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Industries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News & Media</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">External Links</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- sticky nav for quick access to search and quick links and navigation in small screens -->
+        <div class="navbar sticky-top navbar-expand-lg navbar-dark justify-content-center text-center bg-dark text-light">
             
-            <!-- Collapse button for when screen is too small to display elements correctly. Hides remaining elements and activates them through button -->
-            <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>          
-
-            <!-- Content defined to collapse when screen is small -->
-
             <!-- Search bar -->
-            <div class="collapse navbar-collapse justify-content-center mx-auto w-50" id="searchBarToggler">
+            <div class="collapse navbar-collapse mx-auto" id="navbarToggler">
+                
+                <!-- nav elements for small screens -->
+                <div class="d-lg-none text-center text-uppercase">                   
+                    <ul class="navbar-nav text-uppercase">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <!-- Link to second page of assignment -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/student.html">People</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Academics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Research</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Prospective Students</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Facilities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Industries</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News & Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">External Links</a>
+                        </li>
+                    </ul>
+                    
+                    <div>
+                        <button class="btn text-white-50 d-lg-none text-uppercase" type="button" data-toggle="collapse" data-target="#lan-collapse" aria-expanded="false" aria-controls="languageCollapse">
+                            Language
+                        </button>
+
+                        <div class="collapse text-light" id="lan-collapse">
+                            <a class="dropdown-item text-muted" href="#">English</a>
+                            <a class="dropdown-item text-muted" href="#">العربية</a>
+                        </div>
+                    </div>
+                </div>
+                
                 <form class="form-inline my-2 my-lg-0 mx-auto w-100 justify-content-center">
                     <div class="input-group mx-auto w-75">
                         <div class="input-group-prepend">
@@ -61,274 +135,328 @@
                             </div>
                         </div>
                         <!-- The search bar -->
-                        <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search stores" aria-label="Search">
+                        <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search">
                     </div>
                 </form>
-            </div>
 
-            <!-- Categories, sign in and sign up buttons -->
-            <div class="collapse navbar-collapse mx-auto text-center" id="navbarToggler">
-                <!-- Categories is created twice, with two different styles to accomodate different screen sizes -->
-                <button class="btn d-lg-none">CATEGORIES</button>
-                <br>
-                <a href="/html/signIn.html" class="btn mx-2">
-                    <img src="/img/power-button.svg" class="" alt="search" width="15" height="15" loading="lazy">
-                    Sign In
-                </a>
-                <a href="/html/signUp.html"> 
-                    <button type="button" class="btn btn-success mx-2">Sign Up</button>
-                </a>
-            </div>
-        </nav>
-
-        <!-- Second categories button -->
-        <!-- This one shows up when screen is large only. -->
-        <div id="container" class="d-none d-lg-block">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-auto bg-dark">
-    
-                <!-- This categories acts as a drop down menue that will show users the most viewed categories -->
-                <li class="nav-item dropdown active mx-auto">
-                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        CATEGORIES
-                    </a>
-                    <!-- This is the list of most viewed categories -->
-                    <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item text-black-50" href="/html/shoes.html">Shoes</a>
-                        <a class="dropdown-item text-black-50" href="/html/plane.html">Travel & Tourism</a>
-                        <a class="dropdown-item text-black-50" href="/html/electronics.html">Electronics</a>
-                        <div class="dropdown-divider"></div>
-                        <!-- This button will take the user to a page containing all categories -->
-                        <a class="dropdown-item text-black-50" href="/html/categories.html">View All</a>
+                <!-- Quick access links accessable anywhere on screen -->
+                <div class="dropdown mydropdownjQuery mx-auto d-lg-block d-none text-uppercase">
+                    <button class="btn text-white-50 dropdown-toggle text-uppercase" type="button" id="lanSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Quick Links
+                    </button>
+                    <div class="dropdown-menu bg-dark dropdown-menu-lg-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item text-white-50 text-center" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">About</a>
+                            <!-- Link to second page of assignment -->
+                            <a class="dropdown-item text-white-50 text-center" href="/html/student.html">People</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">Academics</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">Research</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">Prospective Students</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">Facilities</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">Extra</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">Industries</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">News & Media</a>
+                            <a class="dropdown-item text-white-50 text-center" href="#">External Links</a>
+                        
                     </div>
-                </li>
+                </div>
 
-            </ul>
+                <div class="dropdown mydropdownjQuery mx-auto d-lg-block d-none text-uppercase">
+                    <button class="btn text-white-50 dropdown-toggle text-uppercase" type="button" id="lanSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Language
+                    </button>
+                    <div class="dropdown-menu bg-dark dropdown-menu-lg-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item text-white-50 text-center" href="#">English</a>
+                        <a class="dropdown-item text-white-50 text-center" href="#">العربية</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Collapse button for when screen is too small to display elements correctly. Hides remaining elements and activates them through button -->
+            <button class="btn navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>  
+
         </div>
     
-        <!-- This will contain the body of the page -->
-        <div class="container">
+        <!-- Content container -->
+        <div class="container mx-auto">
+            <div class="row my-4">
+                <!-- Welcome message -->
+                <div class="col mx-auto align-middle my-lg-5">
+                    <div class="h2">Welcome </div>
+                    <p class="align-middle">The Information and Comp​uter Science (ICS) D​epartment at KFUPM is a renowned department known for its deligence and 
+                        high-quality educational system. With about 37 full-time faculty members​ of the highest caliber
+                        in several specialized areas of research and excellence in education and research, it can guarantee a perfect 
+                        environment for learning how to build software and document using true and tested methods certified by 
+                        top companies worldwide. 
+                    </p>
+                </div>
 
-            <!-- This carousel will act as an advertisement wheele for new offers and coupons. Currently it contains sample images only. -->
-            <div id="couponCarousel" class="carousel slide mt-3" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#couponCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#couponCarousel" data-slide-to="1"></li>
-                    <li data-target="#couponCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/img/01.jpg" class="d-block w-100" alt="sample img">
+                <div class="col-12 col-md-7 mx-auto">
+                    <img src="/img/07-crop.jpg" class="w-100 shadow round" alt="">
+                </div>
+            </div>
+            
+            <div class="row my-4">
+                <!-- News and media -->
+                <div class="col">
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="h4">News & Media</div>
+                            <hr>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/02.jpg" class="d-block w-100" alt="...">
+                    <div class="row mx-auto text-light">
+                        <!-- Cards containing news and media details -->
+                        <div class="col-md-6 col-12 my-2">
+                            <a href="#">
+                                <div class="card shadow">
+                                    <img src="/img/06-crop.jpg" class="card-img-top round" alt="">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">King Fah University New Ranking</h5>
+                                        <p class="card-text">King Fahd University Ranked 4th among top 100 universities in granted...</p>
+                                        <p class="text-muted">June 11, 2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>  
+                        
+                        <div class="col my-2">
+                            <a href="#">
+                                <div class="card shadow">
+                                    <img src="/img/08-crop.jpg" class="card-img-top round" alt="">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">KFUPM Students Win SABIC Competition</h5>
+                                        <p class="card-text">KFUPM student team won the first place at the SABIC competition for th...</p>
+                                        <p class="text-muted">Sept. 1, 2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>  
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/03.jpg" class="d-block w-100" alt="...">
+
+                    <div class="row mx-auto text-white">
+                        <div class="col-md-6 col-12 my-2">
+                            <a href="#">
+                                <div class="card shadow">
+                                    <img src="/img/11.jpg" class="card-img-top round" alt="">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">New Induction Program for KFUPM Students</h5>
+                                        <p class="card-text">King Fahd University of Petroleum & Minerals concludes the induction program for new students...</p>
+                                        <p class="text-muted">Aug 25, 2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>  
+                        
+                        <div class="col my-2">
+                            <a href="">
+                                <div class="card shadow">
+                                    <img src="/img/09-crop.jpg" class="card-img-top round" alt="">
+                                    <div class="card-img-overlay">
+                                        <h5 class="card-title">4 Patents Earned</h5>
+                                        <p class="card-text">Distinguished research at KFUPM is being commercialized to reduce maintenance cost...</p>
+                                        <p class="text-muted">June. 7, 2020</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>  
+                    </div>
+                    <div class="text-center mt-4">
+                        <a class="" href="#">View All News & Media</a>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#couponCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#couponCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
 
-            <hr>
-
-            <!-- This part contains all the most viewed stores and coupons -->
-            <div class="row">
-                <div class="col-12 col-md-8 text-center">
-                    
-                    <!-- This is a sample button group that will be used to traverse some coupons grouped by special categories -->
-                    <!-- It currently does not work, but will be implemented in the next phase -->
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-secondary active btn-sm">
-                            <input type="radio" name="options" id="option1" checked> Coupons & Promotions
-                        </label>
-                        <label class="btn btn-secondary btn-sm">
-                            <input type="radio" name="options" id="option2"> Most Used Coupons
-                        </label>
-                        <label class="btn btn-secondary btn-sm">
-                            <input type="radio" name="options" id="option3"> Seasonal Coupons
-                        </label>
+            <div class="row my-4">
+                <!-- Upcoming events -->
+                <div class="col mx-auto align-middle">
+                    <div class="h4 text-center">Upcoming Events</div>
+                    <hr>
+                    <div class="align-middle">
+                        <!-- Cards containing event details -->
+                        <div class="card shadow my-3 text-center">
+                            <div class="card-title pt-2">
+                                Registration Confirmation First Day
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">REGISTRATION CONFIRMATION thru KFUPM Portal; Classes begin</p>
+                                <p class="text-muted">30 August 2020</p> 
+                              <a href="#" class="float-right">learn more...</a>
+                            </div>
+                        </div>
+                        <div class="card shadow my-3 text-center">
+                            <div class="card-title pt-2">
+                                Registration Confirmation Last Day
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Last day for registration confirmation (4:00 PM); Last day for adding courses</p>
+                                <p class="text-muted">2 September 2020</p> 
+                              <a href="#" class="float-right">learn more...</a>
+                            </div>
+                        </div>
+                        <div class="card shadow my-3 text-center">
+                            <div class="card-title pt-2">
+                                Dropping Last Day
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Last day for dropping course(s) without permanent record</p>
+                                <p class="text-muted">10 September 2020</p> 
+                              <a href="#" class="float-right">learn more...</a>
+                            </div>
+                        </div>
                     </div>
-                      
-                    <!-- This is a sample coupon card. It contains an image, the coupon and a short description -->
-                    <div class="mt-3 text-lg-left">
-                        <div class="card mb-3">
-                            <div class="row no-gutters">
-                                <!-- This is the logo of the store that the coupon comes from -->
-                                <div class="col-md-4">
-                                    <img src="/img/amazon.jpg" class="card-img rounded-circle" alt="amazon-logo">
-                                </div>
-                                <!-- This is the card's body -->
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <!-- A link to the website. Not functional -->
-                                        <a href="" class="float-right" target="_blank">Visit Site <img src="/img/external-link-symbol.svg" alt="external" height="20" width="20"></a>
-                                        <!-- The coupon code -->
-                                        <h5 class="card-title text-uppercase">QWME56</h5>
-                                        <!-- Store name -->
-                                        <p class="card-text text-uppercase">AMAZON</p>
-                                        <!-- Coupon description -->
-                                        <p class="card-text">50% off any purchase over $200</p>
-                                        <!-- Coupon expiration date -->
-                                        <p class="card-text"><small class="text-muted">Expires 28/11/2020</small></p>
-                                        <!-- Button for copying coupon. Not functional -->
-                                        <button class="btn btn-success">Copy Coupon</button>
-                                        <!-- Button for liking coupon. Not functional -->
-                                        <button class="btn"><img src="/img/like.svg" alt="like coupon" height="20" width="20"></button>
-                                        <!-- Button for disliking coupon. Not functional -->
-                                        <button class="btn"><img src="/img/dislike.svg" alt="dislike coupon" height="20" width="20"></button>
-                                        <!-- Ratio of likes to dislikes for coupon -->
-                                        <p class="card-text float-right text-uppercase">69% Acceptance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Coupon -->
-                        <div class="card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="/img/namshi.png" class="card-img rounded-circle" alt="namshi-logo">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <a href="" class="float-right">Visit Site <img src="/img/external-link-symbol.svg" alt="external" height="20" width="20"></a>
-                                        <h5 class="card-title text-uppercase">CQ26xxs</h5>
-                                        <p class="card-text text-uppercase">Namshi</p>
-                                        <p class="card-text">50% off any purchase over $200</p>
-                                        <p class="card-text"><small class="text-muted">Expires 28/11/2020</small></p>
-                                        <button class="btn btn-success">Copy Coupon</button>
-                                        <button class="btn"><img src="/img/like.svg" alt="like coupon" height="20" width="20"></button>
-                                        <button class="btn"><img src="/img/dislike.svg" alt="dislike coupon" height="20" width="20"></button>
-                                        <p class="card-text float-right text-uppercase">60% Acceptance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Coupon -->
-                        <div class="card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="/img/noon-logo-horizontal-yellow.png" class="card-img rounded" alt="noon-logo">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <a href="" class="float-right">Visit Site <img src="/img/external-link-symbol.svg" alt="external" height="20" width="20"></a>
-                                        <h5 class="card-title text-uppercase">xdtrl2</h5>
-                                        <p class="card-text text-uppercase">noon</p>
-                                        <p class="card-text">50% off any purchase over $200</p>
-                                        <p class="card-text"><small class="text-muted">Expires 28/11/2020</small></p>
-                                        <button class="btn btn-success">Copy Coupon</button>
-                                        <button class="btn"><img src="/img/like.svg" alt="like coupon" height="20" width="20"></button>
-                                        <button class="btn"><img src="/img/dislike.svg" alt="dislike coupon" height="20" width="20"></button>
-                                        <p class="card-text float-right text-uppercase">56% Acceptance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center mt-4">
+                        <a class="" href="#">View All Events</a>
                     </div>
                 </div>
+            </div>
 
-                <!-- List of popular stores -->
-                <div class="col mt-4 mx-auto">
-                    <strong>POPULAR STORES</strong>
-                    <div class="row mt-3 mx-auto">
-                        <div class="col-4 mt-2">
-                            <!-- Store logo and link to its page on the website -->
-                            <a href="/html/amazon.html">
-                                <img src="/img/amazon.jpg"
-                                    alt="amazon logo" class="rounded-circle img-thumbnail float-left">
-                                <p class="text-center">AMAZON</p>
-                            </a>
+            <div class="row my-4 mx-auto">
+                <!-- Carousel used to display links to different pages and to add flair to webpage -->
+                <div class="col-12 col-md-10 mx-auto">
+                    <div id="infomecialCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#infomecialCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#infomecialCarousel" data-slide-to="1"></li>
+                            <li data-target="#infomecialCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner rounded-pill shadow">
+                            <div class="carousel-item active">
+                                <img src="/img/09-crop.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption text-dark">
+                                    <a href="#">    
+                                        <h5>Our Curriculum</h5>
+                                        <p>Take a look at our provided curriculums for ICS and SWE majors</p>
+                                    </a>
+                                </div>                            
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/02-crop.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption text-dark">
+                                    <a href="#">
+                                        <h5>Our Faculty</h5>
+                                        <p>Get familiar with our staff and faculty</p>
+                                    </a>
+                                </div>                            
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/03-crop.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption text-dark">
+                                    <a href="#">
+                                        <h5 class="">Our Students</h5>
+                                        <p>Check out what our students think of the department</p>
+                                    </a>
+                                </div>                            
+                            </div>
                         </div>
-                        <div class="col-4 mt-2">
-                            <a href="/html/noon.html">
-                                <img src="/img/noon.jpg" alt="noon logo"
-                                    class="rounded-circle img-thumbnail">
-                                <p class="text-center">NOON</p>
-                            </a>
-                        </div>
-                        <div class="col-4 mt-2">
-                            <a href="/html/namshi.html">
-                                <img src="/img/namshi.png" alt="namshi logo"
-                                    class="rounded-circle img-thumbnail">
-                                <p class="text-center">NAMSHI</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-3 mx-auto">
-                        <div class="col-4 mt-2">
-                            <!-- Store logo and link to its page on the website -->
-                            <a href="/html/amazon.html">
-                                <img src="/img/amazon.jpg"
-                                    alt="amazon logo" class="rounded-circle img-thumbnail float-left">
-                                <p class="text-center">AMAZON</p>
-                            </a>
-                        </div>
-                        <div class="col-4 mt-2">
-                            <a href="/html/noon.html">
-                                <img src="/img/noon.jpg" alt="noon logo"
-                                    class="rounded-circle img-thumbnail">
-                                <p class="text-center">NOON</p>
-                            </a>
-                        </div>
-                        <div class="col-4 mt-2">
-                            <a href="/html/namshi.html">
-                                <img src="/img/namshi.png" alt="namshi logo"
-                                    class="rounded-circle img-thumbnail">
-                                <p class="text-center">NAMSHI</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row mt-3 mx-auto">
-                        <div class="col-4 mt-2">
-                            <!-- Store logo and link to its page on the website -->
-                            <a href="/html/amazon.html">
-                                <img src="/img/amazon.jpg"
-                                    alt="amazon logo" class="rounded-circle img-thumbnail float-left">
-                                <p class="text-center">AMAZON</p>
-                            </a>
-                        </div>
-                        <div class="col-4 mt-2">
-                            <a href="/html/noon.html">
-                                <img src="/img/noon.jpg" alt="noon logo"
-                                    class="rounded-circle img-thumbnail">
-                                <p class="text-center">NOON</p>
-                            </a>
-                        </div>
-                        <div class="col-4 mt-2">
-                            <a href="#">
-                                <!-- Link to all stores. Currently not made because we only put three stores -->
-                                <img src="/img/more.svg" alt="more"
-                                    class="rounded-circle img-thumbnail">
-                                <p class="text-center">VIEW ALL</p>
-                            </a>
-                        </div>
-                    </div>
+                        <a class="carousel-control-prev" href="#infomecialCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#infomecialCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="row mt-4 mb-5">
+                <!-- ICS Vision -->
+                <div class="col mx-auto text-center">
+                    <div class="h4">Vision & Mission</div>
+                    <hr>
+                    ICS’s vision is to be the global leader in the integration of information and computer science 
+                    education and research for undergraduate and graduate levels.
+                    <a href="#">View More</a>
                 </div>
             </div>
         </div>
 
         <!-- Footer -->
-        <footer class="text-center page-footer font-small mx-auto web-footer">
-            <img class="mx-auto my-2" src="/img/twitter.svg" alt="twitter logo" width="40" height="40">
-            <img class="mx-auto my-2" src="/img/instagram.svg" alt="instagram logo" width="40" height="40">
-            <img class="mx-auto my-2" src="/img/youtube.svg" alt="youtube logo" width="40" height="40">
+        <footer class="page-footer font-small mx-auto bg-dark text-light web-footer">
+            <div class="footer-custom text-center">
+                <a href="#">    
+                    <img class="mx-3 my-2" src="/img/facebook.svg" alt="facebook logo" width="40" height="40">
+                </a>
+                <a href="#">
+                    <img class="mx-3 my-2" src="/img/twitter.svg" alt="twitter logo" width="40" height="40">
+                </a>
+                <a href="#">
+                    <img class="mx-3 my-2" src="/img/instagram.svg" alt="instagram logo" width="40" height="40">
+                </a>
+                <a href="#">
+                    <img class="mx-3 my-2" src="/img/linkedin.svg" alt="linkedin logo" width="40" height="40">
+                </a>
+            </div>
+
+            <div class="container">
+                <div class="row align-content-middle">
+                    <div class="col-12 col-md mt-3 contacts">
+                        <p class="title-custom">
+                            Contact Us
+                        </p>
+                        <p>
+                            Dean's Office
+                        </p>
+                        <p>
+                            College of Engineering
+                        </p>
+                        <p>
+                            Information & Computer Science
+                        </p>
+                        <br>
+                        <p>
+                            Email: c-ics@kfupm.edu.sa
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md pt-5 contacts">
+                        <p class="subtitle-custom">
+                            Location
+                        </p>
+                        <p>
+                            22 - 300
+                        </p>
+                        <br>
+                        <p>
+                            Tel: +966 3 860 2175
+                        </p>
+                        <p>
+                            Fax: +966 3 860 2174
+                        </p>
+                    </div>
+                    <div class="col-12 col-md pt-5 pb-sm-3 contacts">
+                        <p class="subtitle-custom">
+                            Postal Address
+                        </p>
+                        <p>
+                            P.O. Box 5066
+                        </p>
+                        <p>
+                            Dhahran 31261
+                        </p>
+                        <p>
+                            Kingdom of Saudi Arabia
+                        </p>
+                    </div>
+                    <div class="col-12 col-md pt-5 contacts">
+                        <img class="py-2" src="/img/information-dept-logo-28.svg" alt="ICS dep logo">
+                    </div>
+                </div>    
+            </div>        
+            
             <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <div class="footer-copyright text-center mt-5 pb-3">© 2020 Copyright:
             <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
             <br>
             Icons made by <a href=" https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
             <br>
-            © 2020 H2O2 All Rights Reserved
+            © 2020 KFUPM All Rights Reserved
             </div>
             <!-- Copyright -->
         </footer>
